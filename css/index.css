@@ -372,6 +372,7 @@
     width: 100%;
     padding: 15px 0;
     overflow: hidden !important;
+    margin-top: 30px;
 }
 
 .swiper-container-news .swiper-slide {
@@ -387,8 +388,17 @@
     overflow: hidden;
 }
 
+.news-des {
+    position: absolute;
+    z-index: 2000;
+    background: var(--blanco-hueso);
+    top: 0;
+    opacity: 0.5;
+}
+
 .swiper-container-news .swiper-slide:first-child {
-    background-image: url(../img/flores.jpg);
+    background-image: url(../img/noticias/pexels-alexandre-saraiva-carniato-3701801\ \(1\).jpg);
+    background-position: left;
 }
 
 .swiper-container-news .swiper-slide:nth-child(2) {
@@ -406,7 +416,7 @@
 .swiper-container-news .swiper-slide::after {
     content: "";
     position: absolute;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.965), rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.945));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.965), rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.945));
     top: 0;
     z-index: 100;
     left: 0;
@@ -444,6 +454,8 @@
     width: 100%;
     text-align: center;
     font-weight: 500;
+    padding: 0 20px;
+    font-size: 0.9em;
 }
 
 .news-title a {
@@ -490,24 +502,44 @@
     background: rgba(0, 0, 0, 0.575);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
     border-radius: 10px;
+    transition: 0.5s ease !important;
 }
 
-.proyects-card-img img {
+.proyect:first-child .proyects-card-img {
+    background: url(../img/pexels-matt-hardy-5059013.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease;
+    position: relative;
+    overflow: visible;
+}
+
+.proyect:first-child .proyects-card-img:after {
+    content: "Nuevo";
+    background: var(--naranja-oscuro);
+    padding: 5px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 15px;
+    left: -7px;
+    font-size: 0.75em;
+    position: absolute;
+    font-weight: 600;
+    color: var(--blanco-hueso);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.525);
+}
+
+.proyect:last-child .proyects-card-img {
+    background: url(../img/enseñanza.jpg);
+    background-size: cover;
+    background-position: 15%;
+}
+
+.proyects-card-img a {
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 40%;
     border-radius: 10px;
-    transition: ease 2s;
-    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
     display: inline-block;
-}
-
-.proyects-card-img-two img {
-    object-position: 15%;
-}
-
-.proyects-card-img img:hover {
-    transform: scale(1.3);
 }
 
 .proyects-content {
@@ -556,6 +588,8 @@
     border-radius: 50px;
     display: block;
     max-width: 360px;
+    border-radius: 50px;
+    position: relative;
     overflow: hidden;
 }
 
@@ -619,6 +653,7 @@
     color: var(--grisoscuro);
     max-width: 400px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
+    position: relative;
     overflow: hidden;
 }
 
@@ -629,9 +664,12 @@
     position: relative !important;
     height: 480px;
     width: 100%;
+    background: url(../img/guatemala-1971375_1920.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.about-us video {
+.about-us img {
     object-fit: cover;
     height: 100%;
 }
@@ -737,7 +775,7 @@
     border-radius: 10px;
     max-width: 400px;
     margin: 15px auto;
-    background: linear-gradient(to top, rgb(182, 174, 174), rgb(223, 215, 215));
+    background: linear-gradient(to bottom, #fff, rgb(172, 172, 172));
     box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
     font-size: 1.2em;
 }
@@ -844,6 +882,13 @@
     margin-bottom: 20px;
     overflow: hidden;
     max-width: 400px;
+    background: url(../img/pexels-julia-khalimova-3922579\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
 }
 
 .about-musik-logo {
@@ -874,6 +919,8 @@
     object-fit: cover;
     object-position: left;
     position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .about-us-musik::after {
@@ -907,7 +954,7 @@
     background: linear-gradient(to bottom, rgb(20, 20, 20), transparent);
     height: 150px;
     width: 100%;
-    top: 188px;
+    top: 175px;
     left: 0;
     position: absolute;
     z-index: 100;
@@ -917,32 +964,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
     max-width: 300px;
     margin: auto;
-    padding-top: 20px;
-    border-bottom: 2px solid rgb(151, 150, 150);
-}
-
-.about-church-logo h3 span {
-    display: block;
+    padding-top: 10px;
 }
 
 .about-church-logo img {
     margin: 0;
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    margin: auto;
+    display: inline-block;
     object-fit: cover;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.658));
-    margin-right: -15px;
-    margin-left: -10px;
+    height: auto;
 }
 
 .about-us-church p {
-    margin-bottom: 20px;
-    margin-top: 10px;
+    padding-top: 5px;
     font-size: 0.9em;
     color: rgb(151, 150, 150);
+    border-top: 2px solid rgba(151, 150, 150, 0.123);
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .about-us-church .more {
@@ -950,10 +996,12 @@
     z-index: 200;
 }
 
-.about-us-church img:last-child {
-    position: relative;
-    z-index: 90;
-    margin-bottom: -5px;
+.about-church-img {
+    background: url(../img/adoracion.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
 }
 
 .about-share-ws {
@@ -1086,8 +1134,7 @@
     padding-top: 30px;
     margin-top: -20px;
     background: var(--blanco-hueso);
-    padding-bottom: 30px;
-    margin-bottom: -60px;
+    padding-bottom: 50px;
 }
 
 .contact-title {
@@ -1097,254 +1144,156 @@
     align-items: center;
 }
 
-form img {
-    width: 90%;
+#form {
+    width: 95%;
     margin: auto;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    max-width: 350px;
+    max-width: 450px;
+    margin-top: -20px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-form {
-    width: 90%;
-    margin: auto;
-    max-width: 1250px;
-    margin-bottom: 50px;
-    overflow: hidden;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 500 !important;
-    position: relative;
+#form p {
+    text-align: left;
 }
 
-form .contact-img {
+#form .contact-img {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: visible !important;
+    padding: 25px;
+    margin-bottom: 20px;
 }
 
-.form-group-input {
-    position: relative;
-    margin-top: 45px;
-    height: 35px;
+#form img {
+    object-fit: cover;
+    max-width: 300px;
+    margin-left: -5px;
 }
 
-.form-select {
-    position: relative;
-    margin: 20px 0;
-}
-
-.form-select label {
-    position: absolute;
-    top: -33px;
-    left: 0;
+#form input,
+#form textarea {
     width: 100%;
-    height: 100%;
-    z-index: 100;
-    pointer-events: none;
-}
-
-form select {
-    margin-top: 25px;
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.123);
-    border: none;
-    border-bottom: 2px solid var(--celeste-claro);
-    padding-top: 10px;
-    padding-bottom: 4px;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    outline: none;
-}
-
-form select option {
-    background: rgb(255, 255, 255);
-    margin-top: 5px;
-    border: 0px;
-    outline: none;
-    font-size: 0.8em;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.form-group-input input {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
+    background: #ffffff;
     border: none;
     outline: none;
-    padding-left: 10px;
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.055);
-    transition: 0.3s ease;
-}
-
-.form-group-input label,
-.form-text label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    pointer-events: none;
-    border-bottom: 1px solid rgba(151, 150, 150, 0.609);
-}
-
-.form-group-input label::after,
-.form-text label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 2px solid var(--celeste-claro);
-    transform: translateX(-101%);
-    transition: 0.3s ease;
-}
-
-.content-input {
-    position: absolute;
-    top: -20px;
-    left: 5px;
-    transition: 0.3s ease;
-    font-weight: 600;
-}
-
-#label-select .content-input {
-    top: 38px;
-}
-
-form input:focus+label::after,
-form input:valid+label::after,
-form textarea:focus+label::after,
-form textarea:valid+label::after {
-    transform: translateX(0%);
-}
-
-form input:focus,
-form textarea:focus {
-    background: rgb(236, 236, 236);
-}
-
-.form-text {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    margin-top: 45px;
-}
-
-.form-text label span {
-    position: absolute;
-    top: -20px;
-    font-weight: 600;
-}
-
-.form-text textarea {
     resize: none;
-    border: none;
-    outline: none;
-    text-align: left;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.123);
     transition: 0.3s ease;
-}
-
-.form-submit a {
-    color: var(--celeste-claro);
-}
-
-.form-check a {
-    color: var(--celeste-claro);
-}
-
-.form-submit {
-    width: 100%;
-    margin-top: 10px;
-}
-
-.form-submit input {
-    width: 130px;
-    height: 40px;
-    color: var(--blanco-hueso);
-    background: linear-gradient(45deg, var(--celeste-oscuro), var(--celeste-claro));
+    font-weight: 500;
     border-radius: 5px;
-    font-weight: 700;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.575);
-    border: none;
-    outline: none;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.295);
-    transition: 0.3s ease;
-    margin: 0;
-    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.089);
+    border-bottom: 2px solid rgb(206, 206, 206);
 }
 
-.form-submit .icon {
-    margin-right: 5px;
+#form input:focus,
+#form textarea:focus {
+    border-bottom: 2px solid var(--celeste-claro);
 }
 
-.form-error,
-.error-submit {
-    color: rgb(131, 124, 124);
-    /* color: var(--blanco-hueso); */
-    text-align: left;
-    font-size: 0.7em;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    display: none;
+#form input {
+    height: 35px;
+    padding: 7px 10px;
+    margin-top: 10px;
     position: relative;
 }
 
-.error-active label::after {
-    border-bottom: 2px solid var(--naranja-oscuro);
-    transform: translateX(0);
+#form textarea {
+    padding: 10px;
+    margin-top: 10px;
+    padding-right: 30px;
 }
 
-.error-active input,
-.error-active textarea {
-    background: rgb(195, 195, 195);
+.input-phone {
+    width: 80% !important;
 }
 
-.form-text .form-error {
-    margin-bottom: 20px !important;
+.input-phone input {
+    background: #fff !important;
 }
 
-.form-error .icon {
-    border-radius: 50%;
-    padding: 3px;
-    color: var(--blanco-hueso);
-    background: rgb(209, 43, 21);
-    width: 17px;
-    height: 17px;
-    margin-right: 4px;
+#sub {
+    position: relative;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #fff;
+    margin-top: 10px;
+    outline: none;
+    margin-bottom: 30px !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 2px solid var(--celeste-claro);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.089);
+    cursor: pointer;
 }
 
-.form-submit input {
-    transition: 0.2s ease;
+#sub option {
+    font-weight: 600;
+    font-size: 0.9em;
+    outline: none;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
 }
 
-.form-submit input:active {
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box label {
+    font-weight: 600;
+    font-size: 0.9em;
+    position: relative;
+}
+
+label b {
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+#form #btnSubmit {
+    background: linear-gradient(40deg, var(--celeste-claro), var(--celeste-oscuro));
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    transition: ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.089);
+    border: 0;
+    padding: 10px 35px;
+    transition: 0.1s ease;
+}
+
+.input-submit .input-error {
+    font-size: 0.9em !important;
+    margin-top: 15px;
+    text-align: center !important;
+}
+
+#btnSubmit:active {
     transform: scale(0.95);
 }
 
-.form-submit input:focus {
-    background: linear-gradient(45deg, var(--celeste-oscuro), var(--celeste-claro));
+#btnSubmit~p {
+    font-size: 0.55em;
 }
 
+#btnSubmit~p a {
+    color: var(--celeste-claro);
+}
 
-/********************************/
+.input-error {
+    font-size: 0.9em;
+    color: rgb(243, 18, 18);
+    display: none;
+}
 
 
 /********************************/
@@ -1409,7 +1358,6 @@ form textarea:focus {
         font-size: 1em;
     }
     .about-us-church img:last-child {
-        height: 290px;
         object-fit: cover;
     }
     .proyect {
@@ -1605,6 +1553,10 @@ form textarea:focus {
         font-size: 1.35em;
         padding: 12px 25px;
     }
+    .help-description p span {
+        font-size: 0.6em !important;
+        max-width: auto !important;
+    }
     .help-container-card {
         max-width: 360px;
         margin-top: 70px;
@@ -1622,6 +1574,10 @@ form textarea:focus {
     .proyects-card-img {
         min-width: 270px;
         height: 330px;
+    }
+    .proyect:first-child .proyects-card-img:after {
+        padding: 5px 15px;
+        font-size: 1em;
     }
     .proyects-content {
         height: 330px;
@@ -1728,18 +1684,21 @@ form textarea:focus {
         font-size: 1em;
         text-transform: uppercase;
     }
-    .about-us-church img:last-child {
-        height: 400px;
-    }
     .about-personal-proyects {
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 1300px !important;
+        margin: auto;
     }
     .about-personal-proyects>div {
-        max-width: 47% !important;
+        width: 47% !important;
+        max-width: 49% !important;
         height: 540px;
         margin: auto;
+    }
+    .about-church-img {
+        height: 360px;
     }
     .news-telegram {
         margin: 15px 0;
@@ -1748,12 +1707,14 @@ form textarea:focus {
         font-size: 1em;
         transition: 0.2s ease;
     }
-    .contact-img img {
-        width: 400px;
-        height: 400px;
-        margin-top: -30px;
-        margin-bottom: -50px;
+    #form {
+        max-width: 650px;
+        margin-top: 0;
     }
+    #form img {
+        max-width: 400px;
+    }
+    #form .form-container {}
     .form-submit .form-error {
         margin-left: 0;
     }
@@ -1819,16 +1780,26 @@ form textarea:focus {
     .banner-container-button a:hover {
         transform: scale(1.05);
     }
+    .help,
+    .about,
+    .faq,
+    .contact {
+        padding: 40px 0;
+    }
     .help-container-card {
         max-width: 420px;
         margin-top: 70px;
     }
     .news,
     .proyects {
-        padding-top: 40px;
+        padding-top: 60px;
     }
     .news a {
         transition: 0.2s ease;
+    }
+    .news-title p {
+        font-size: 1.05em !important;
+        text-shadow: 2px 2px 2px #000;
     }
     .swiper-container-news a:hover p {
         text-decoration: underline !important;
@@ -1854,6 +1825,7 @@ form textarea:focus {
         border-bottom: 0px;
     }
     .proyects {
+        padding-bottom: 50px;
         margin-bottom: 30px;
     }
     .proyect-container {
@@ -1932,10 +1904,10 @@ form textarea:focus {
         max-width: 95%;
     }
     .about-us-video {
-        height: 350px;
+        height: 390px;
     }
     .about-us-content {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.431);
     }
     .about-icon {
         margin-top: -50px;
@@ -1992,14 +1964,6 @@ form textarea:focus {
         font-size: 1em;
         text-transform: uppercase;
     }
-    .about-us-church img:last-child {
-        height: 400px;
-    }
-    .about-us-musik p {
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 1.1em;
-    }
     .about-us-church p {
         font-size: 1em;
     }
@@ -2008,6 +1972,7 @@ form textarea:focus {
         transition: ease;
         padding-left: 5px;
         padding-right: 5px;
+        font-size: 1.2em;
     }
     .accordion-item-header:hover {
         background: rgb(240, 238, 238);
@@ -2018,43 +1983,24 @@ form textarea:focus {
     .contact h2~p {
         margin-top: 7px;
     }
-    form .contact-img {
-        width: 50%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        overflow: visible !important;
-    }
-    form .form-container {
-        width: 50%;
-    }
-    form select,
-    form select option {
-        cursor: pointer;
-    }
-    form select option:hover {
-        background: var(--celeste-claro);
-        color: var(--grisoscuro);
-    }
-    .form-group-input {
-        height: 40px;
-    }
-    .contact-img img {
-        margin: 0;
-    }
-    form {
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-    form>div {
-        overflow: hidden;
-    }
-    .form-submit input {
-        transition: 0.2s ease;
-    }
-    .form-submit input:hover {
+    .input-submit input:hover {
         opacity: 0.8;
+    }
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin-top: 50px;
+    }
+    #form .contact-img {
+        width: 50%;
+    }
+    #form img {
+        max-width: 95%;
+    }
+    #form .form-container {
+        width: 50%;
     }
 }
 
@@ -2089,6 +2035,8 @@ form textarea:focus {
     }
     .help-container {
         margin-top: 40px;
+        max-width: 1400px;
+        margin: auto;
     }
     .help-container-card {
         max-width: 400px;
@@ -2101,6 +2049,10 @@ form textarea:focus {
     .help-container-card:nth-child(2) {
         margin-bottom: 0px;
     }
+    .proyect-container {
+        max-width: 1450px;
+        margin: auto;
+    }
     .about-personal-proyects {
         display: flex;
         align-items: center;
@@ -2108,8 +2060,27 @@ form textarea:focus {
     }
     .about-personal-proyects>div {
         max-width: 47% !important;
-        height: 570px !important;
+        height: 600px !important;
         margin: auto;
+    }
+    .about-personal-proyects>div {
+        width: 47% !important;
+        max-width: 49% !important;
+        height: 540px;
+        margin: auto;
+    }
+    .about-us-church::after {
+        content: "";
+        background: linear-gradient(to bottom, rgb(20, 20, 20), transparent);
+        height: 240px;
+        width: 100%;
+        top: 185px !important;
+        left: 0;
+        position: absolute;
+        z-index: 100;
+    }
+    .about-church-img {
+        height: 420px;
     }
     .about-us-content p {
         color: var(--blanco-hueso);
@@ -2129,23 +2100,13 @@ form textarea:focus {
         display: inline-block;
         margin-right: 5px;
     }
-    .about-us-church img:last-child {
-        height: 400px;
-    }
     .about-us-musik p {
         padding-left: 40px;
         padding-right: 40px;
         font-size: 1.3em;
     }
     .about-us-church p {
-        font-size: 1.2em;
-    }
-    .about-church-logo img {
-        width: 130px;
-        height: 130px;
-    }
-    .about-musik-logo img {
-        width: 250px;
+        font-size: 1.3em;
     }
     .about-us-church::after {
         top: 225px;
@@ -2158,30 +2119,6 @@ form textarea:focus {
     }
     .contact {
         padding-bottom: 80px;
-    }
-    form .contact-img {
-        width: 40%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        overflow: visible !important;
-    }
-    form .form-container {
-        width: 50%;
-    }
-    .contact-img img {
-        margin: 0;
-        width: 100%;
-        height: 550px;
-        max-width: 100%;
-    }
-    form {
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-    form>div {
-        overflow: hidden;
     }
 }
 
@@ -2322,32 +2259,6 @@ form textarea:focus {
     }
     .accordion-item-body {
         font-size: 1em;
-    }
-    .contact {
-        padding-bottom: 80px;
-    }
-    form .contact-img {
-        width: 35%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        overflow: visible !important;
-    }
-    form .form-container {
-        width: 55%;
-    }
-    .contact-img img {
-        margin: 0;
-        width: 450px;
-        height: 450px;
-    }
-    form {
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-    form>div {
-        overflow: hidden;
     }
 }
 

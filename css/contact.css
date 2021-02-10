@@ -15,12 +15,6 @@ main {
     margin-top: 50px;
 }
 
-.header-container-donate {
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    transition: 0.2s ease;
-}
-
 .banner-contact {
     padding: 10px 0;
     background: var(--blanco-hueso);

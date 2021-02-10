@@ -68,7 +68,7 @@
     
     body {
         font-family: 'Montserrat';
-        background: var(--blanco-hueso);
+        background: url(../img/background-body.jpg);
         position: relative;
     }
     
@@ -177,188 +177,123 @@
     .shadow {
         background-color: rgba(0, 0, 0, 0.45);
         height: 100vh;
-        opacity: 0;
+        visibility: 0;
         position: fixed;
         top: 0px;
         left: 0;
-        pointer-events: none;
+        pointer-events: auto;
         transition: 0.2s ease;
         width: 100%;
-        z-index: auto;
+        z-index: 0;
     }
     
     .visible {
         pointer-events: auto;
-        opacity: 1;
+        visibility: 1;
         transition: 200ms ease-in;
-        z-index: 2000;
+        z-index: auto;
     }
     
-    .go-top_container {
+    .contact-bubble {
         position: fixed;
-        bottom: 58px;
-        right: -6px;
-        width: 50px;
-        height: 50px;
-        z-index: -1;
-    }
-    
-    .go-top_button {
-        width: 0px;
-        height: 0px;
-        opacity: 0;
-        background: rgba(15, 15, 15, .6);
+        bottom: 7px;
+        right: 7px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        border: 1px solid #fff;
-        cursor: pointer;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-        transition: .2s;
-    }
-    
-    .go-top_button .icon {
-        position: absolute;
-        font-size: 19px;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        color: #fff;
-        transition: .2s;
-    }
-    
-    .show {
-        z-index: 2000;
-        opacity: 1;
-    }
-    
-    .show .go-top_button {
-        animation: popup .4s ease-in-out;
-        width: 50px;
-        height: 50px;
-        z-index: 2100;
-        opacity: 1;
-    }
-    
-    .show .icon {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-    }
-    
-    .float-contact {
-        position: fixed;
-        z-index: 2500;
-        bottom: 20px;
-        right: 10px;
-    }
-    
-    .float-container:active,
-    .bubble:active {
-        transform: scale(0.93);
-    }
-    
-    .float-container,
-    .bubble {
-        width: 55px;
-        height: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background: var(--naranja-oscuro);
-        color: var(--blanco-hueso);
-        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.534));
-        border-radius: 50%;
-        font-size: 1.5em;
-        transition: 0.2s ease;
+        filter: drop-shadow(4px 10px 20px rgba(0, 0, 0, 0.425));
+        transition: 0.1s ease;
+        color: #fff;
+        line-height: 60px;
+        text-align: center;
+        z-index: 500;
     }
     
-    .float-bubbles {
-        left: 6px;
-        bottom: -10px;
+    .contact-bubble .iconTimes {
+        display: inline-block;
         position: absolute;
+        font-size: 1.9em;
+        top: 4px;
+        right: 12px;
+        border-radius: 50%;
         opacity: 0;
-        pointer-events: none;
+        background: var(--naranja-oscuro);
+        padding: 5px;
         transition: 0.4s ease;
     }
     
-    .bubble-active {
-        bottom: 55px;
+    .contact-bubble .iconCom {
+        display: inline-block;
         opacity: 1;
-        pointer-events: auto;
+        transition: 0.4s ease;
+    }
+    
+    .times-active {
+        opacity: 1 !important;
+    }
+    
+    .bubble-container {
+        height: 100%;
+        font-size: 1.7em;
+        z-index: 900 !important;
+    }
+    
+    .bubble-social {
+        position: fixed;
+        z-index: 300 !important;
+        bottom: 20px;
+        right: 15px;
+        transition: 0.4s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .bubble-active {
+        bottom: 70px;
+        opacity: 1;
+        pointer-events: auto !important;
     }
     
     .bubble {
         width: 45px;
         height: 45px;
-        margin-bottom: 7px;
         background: #fff;
-        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25)) drop-shadow(-2px -2px 4px rgba(0, 0, 0, 0.25));
-    }
-    
-    #comment {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        line-height: 55px;
-        font-size: 1.05em;
+        filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.516));
         border-radius: 50%;
-    }
-    
-    #times {
-        position: absolute;
-        z-index: 3000;
-        bottom: 0px;
-        right: 0px;
-        font-size: 1.5em;
-        display: none;
-        width: 100%;
-        height: 100%;
         text-align: center;
-        line-height: 55px;
-        border-radius: 50%;
+        line-height: 45px;
+        font-size: 1.25em;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 100;
+        color: #fff;
     }
     
-    #mail a {
-        color: var(--grisoscuro);
-        text-decoration: none;
-        font-size: 0.9em;
-    }
-    
-    #phone a {
-        color: var(--grisoscuro);
-        text-decoration: none;
-        font-size: 0.9em;
-    }
-    
-    #wsp a {
-        color: rgb(25, 187, 20);
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #wsp a img {
-        width: 50%;
-        margin: auto;
-        filter: contrast(13);
-    }
-    
-    #msn a {
-        color: rgb(20, 51, 187);
-        text-decoration: none;
+    #wp a {
+        color: rgb(11, 155, 30);
+        font-size: 1.2em;
         filter: contrast(2);
     }
     
-    #tlg a {
-        color: #0088cc;
+    #fm a {
+        color: #1518b8;
+        font-size: 1.2em;
     }
     
-    #tlg a .icon {
-        margin-right: 2.5px;
-        margin-top: 3px;
-        font-size: 1.1em;
+    #ml a,
+    #ph a {
+        color: #000;
+    }
+    
+    #tl a {
+        color: #0c95da;
+        font-size: 1.2em;
+        margin-left: -3px;
+    }
+    
+    .contact-bubble:active {
+        transform: scale(0.95);
     }
     
     .more {
@@ -381,14 +316,12 @@
     
     .header {
         width: 100%;
-        background: rgba(0, 0, 0, 0.83);
-        -webkit-backdrop-filter: saturate(180%) blur(15px);
-        backdrop-filter: saturate(180%) blur(15px);
+        background: var(--grisoscuro);
         position: fixed;
         top: -1px;
         left: 0;
         z-index: 3000;
-        box-shadow: 4px 0px 7px #000;
+        box-shadow: 4px 10px 20px 6px rgba(0, 0, 0, 0.109);
         transition: all 0.3s ease !important;
     }
     
@@ -476,7 +409,9 @@
     }
     
     .header-container nav {
-        background: var(--grisoscuro);
+        background: rgba(0, 0, 0, 0.92);
+        -webkit-backdrop-filter: blur(19px);
+        backdrop-filter: blur(19px);
         position: absolute;
         top: 45px;
         left: 0;
@@ -680,7 +615,7 @@
         width: 100%;
         overflow: hidden;
         height: 40px;
-        top: -40px;
+        top: -39px;
         z-index: 100 !important;
     }
     
@@ -761,25 +696,7 @@
     }
     
     .footer-logo-container img {
-        width: 75px;
-    }
-    
-    .footer-logo-container p span {
-        display: block;
-        font-size: 0.9em;
-        font-weight: 700;
-        color: var(--blanco-hueso);
-        margin-left: 15px;
-        position: relative;
-    }
-    
-    .footer-logo-container p span::before {
-        content: "";
-        position: absolute;
-        left: -10px;
-        height: 20px;
-        width: 2px;
-        background: var(--blanco-hueso);
+        width: 150px;
     }
     
     .footer-social {
@@ -855,44 +772,11 @@
         .header-menu-content a {
             font-size: 1.18em;
         }
-        .float-container,
-        .bubble {
-            width: 60px;
-            height: 60px;
-            font-size: 1.7em;
-        }
-        .float-bubbles {
-            left: 6px;
-            bottom: 0px;
-            position: absolute;
-            opacity: 0;
-            pointer-events: none;
-            transition: 0.4s ease;
-        }
-        .bubble-active {
-            bottom: 60px;
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .bubble {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 7px;
-            background: #fff;
-            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25)) drop-shadow(-2px -2px 4px rgba(0, 0, 0, 0.25));
-        }
-        #times,
-        #comment {
-            line-height: 60px;
-        }
-        #comment {
-            font-size: 1em;
-            left: 2px;
-        }
-        #times {
-            top: 1px;
-            right: 0px;
-            font-size: 1.4em;
+    }
+    
+    @media screen and (min-width:425px) {
+        .footer-logo-container img {
+            width: 160px;
         }
     }
     
@@ -913,7 +797,7 @@
     
     @media screen and (min-width:760px) {
         h2 {
-            font-size: 3.4em;
+            font-size: 3.6em;
             text-align: center;
             font-weight: 800;
             display: block;
@@ -922,7 +806,39 @@
         h2~p {
             width: 92%;
             margin: 10px auto;
-            font-size: 1.25em;
+            font-size: 1.5em;
+        }
+        .contact-bubble {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            cursor: pointer;
+        }
+        .contact-bubble .iconTimes {
+            font-size: 1.8em;
+            top: 7px;
+            right: 16px;
+        }
+        .bubble-container {
+            font-size: 1.9em;
+        }
+        .bubble-social {
+            bottom: 20px;
+            right: 18px;
+        }
+        .bubble-active {
+            bottom: 85px;
+            opacity: 1;
+            pointer-events: auto !important;
+        }
+        .bubble {
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 1.45em;
         }
         .footer-legal ul {
             display: flex;
@@ -941,21 +857,22 @@
     }
     
     @media screen and (min-width:652px) {
+        .footer-logo-container img {
+            width: 195px;
+        }
         .footer-waves {
             position: relative;
             width: 100%;
             overflow: hidden;
             height: 60px;
-            top: -60px;
+            top: -59px;
             z-index: 100 !important;
         }
     }
     
-    @media screen and (min-width:930px) {}
-    
     @media screen and (min-width:900px) {
         h2 {
-            font-size: 3.95em;
+            font-size: 4.3em;
             text-align: center;
             font-weight: 800;
             display: block;
@@ -964,7 +881,7 @@
         h2~p {
             width: 92%;
             margin: 10px auto;
-            font-size: 1.3em;
+            font-size: 1.7em;
         }
         .footer-waves {
             position: relative;
@@ -1011,7 +928,7 @@
             align-items: center;
         }
         .footer-logo-container img {
-            width: 75px;
+            width: 150px;
         }
         .footer-logo-container p span {
             display: block;
@@ -1097,170 +1014,17 @@
             font-size: 1em;
             margin-right: 30px;
         }
+        .footer-logo-container img {
+            width: 160px;
+        }
     }
     
-    @media screen and (min-width:1050px) {
+    @media screen and (min-width:1020px) {
         #header-donate a:hover>.icon {
             animation: gift infinite 1s ease;
         }
-        .float-contact {
-            right: 15px;
-        }
-        .float-container,
-        .bubble {
-            width: 65px;
-            height: 65px;
-            font-size: 1.7em;
-            transition: 0.1s ease;
-            cursor: pointer;
-        }
-        .float-container:active {
-            transform: scale(0.90);
-        }
-        .float-bubbles {
-            left: 5px;
-            bottom: 0px;
-            position: absolute;
-            opacity: 0;
-            pointer-events: none;
-            transition: 0.4s ease;
-        }
-        .bubble-active {
-            bottom: 65px;
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .bubble {
-            width: 55px;
-            height: 55px;
-        }
-        .bubble a {
-            height: 100%;
-            width: 100%;
-            line-height: 55px;
-            text-align: center;
-            border-radius: 50%;
-        }
-        #comment {
-            line-height: 65px;
-        }
-        #times {
-            font-size: 1.5em;
-            line-height: 68px;
-        }
-        #mail:after {
-            content: "Correo Electrónico";
-            position: absolute;
-            text-align: center;
-            background: var(--blanco-hueso);
-            border-radius: 10px;
-            left: -180px;
-            width: auto;
-            font-size: 0.6em;
-            padding: 5px 10px;
-            font-weight: 600;
-            color: var(--grisoscuro);
-            opacity: 0;
-            transition: 0.2s ease;
-        }
-        #mail:hover::after {
-            opacity: 1;
-        }
-        #phone {
-            position: relative;
-        }
-        #phone a {
-            color: var(--grisoscuro);
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-        #phone:hover>a,
-        #mail:hover>a {
-            color: var(--naranja-oscuro);
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-        #phone:after {
-            content: "+502 0000-0000";
-            position: absolute;
-            text-align: center;
-            background: var(--blanco-hueso);
-            border-radius: 10px;
-            left: -163px;
-            width: auto;
-            font-size: 0.6em;
-            padding: 5px 10px;
-            font-weight: 600;
-            color: var(--grisoscuro);
-            opacity: 0;
-            transition: 0.2s ease;
-        }
-        #phone:hover::after {
-            opacity: 1;
-        }
-        #wsp:after {
-            content: "Chat de WhatsApp";
-            position: absolute;
-            text-align: center;
-            background: var(--blanco-hueso);
-            border-radius: 10px;
-            left: -185px;
-            width: auto;
-            font-size: 0.6em;
-            padding: 5px 10px;
-            font-weight: 600;
-            color: var(--grisoscuro);
-            opacity: 0;
-            transition: 0.2s ease;
-        }
-        #wsp:hover::after {
-            opacity: 1;
-        }
-        #msn:after {
-            content: "Chat de Messenger";
-            position: absolute;
-            text-align: center;
-            background: var(--blanco-hueso);
-            border-radius: 10px;
-            left: -187px;
-            width: auto;
-            font-size: 0.6em;
-            padding: 5px 10px;
-            font-weight: 600;
-            color: var(--grisoscuro);
-            opacity: 0;
-            transition: 0.2s ease;
-        }
-        #msn:hover::after {
-            opacity: 1;
-        }
-        #tlg:after {
-            content: "Chat de Telegram";
-            position: absolute;
-            text-align: center;
-            background: var(--blanco-hueso);
-            border-radius: 10px;
-            left: -175px;
-            width: auto;
-            font-size: 0.6em;
-            padding: 5px 10px;
-            font-weight: 600;
-            color: var(--grisoscuro);
-            opacity: 0;
-            transition: 0.2s ease;
-        }
-        #tlg:hover::after {
-            opacity: 1;
-        }
-        .header-contact {
-            display: block;
-            position: relative;
-        }
-        .header {
-            position: fixed;
-            height: 40px;
-            top: 0;
-            left: 0;
+        .bubble:hover {
+            transform: scale(1.15);
         }
         .header {
             width: 100%;
@@ -1287,12 +1051,13 @@
         }
         .header-container-donate span a {
             padding: 5px 15px;
-            font-size: 0.85em;
+            font-size: 0.75em;
             margin-right: 3px;
             background: linear-gradient(-45deg, var(--celeste-claro), var(--celeste-oscuro));
         }
         .header-container nav {
-            background: none;
+            background: transparent !important;
+            backdrop-filter: none;
             position: relative;
             top: 0;
             left: 0;
@@ -1331,6 +1096,7 @@
             display: flex;
             transition: 0.2s ease;
             height: 45px;
+            font-size: 1em;
             align-items: center;
         }
         .header-menu-content:hover>a {
@@ -1498,6 +1264,9 @@
         .header-menu-down-content li a:hover {
             color: var(--naranja-oscuro);
             filter: none;
+        }
+        .header-menu-content a {
+            font-size: 1.15em;
         }
         .header-container-burger {
             display: none;
@@ -1747,13 +1516,10 @@
     
     @keyframes movingRight {
         0% {
-            transform: translateX(5px);
-        }
-        50% {
-            transform: translateX(0);
+            transform: translateX(-5px);
         }
         100% {
-            transform: translateX(5px);
+            transform: translateX(0);
         }
     }
     
