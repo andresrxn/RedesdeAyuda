@@ -68,7 +68,7 @@
     
     body {
         font-family: 'Montserrat';
-        background: url(../img/background-body.jpg);
+        background: var(--blanco-hueso);
         position: relative;
     }
     
@@ -1277,6 +1277,29 @@
             pointer-events: auto;
         }
     }
+    /* @media (prefers-color-scheme: dark) {
+         :root {
+            --dark: rgb(15, 15, 15);
+            --dark-light: rgb(32, 31, 31);
+        }
+        body {
+            background: var(--dark);
+            background-image: none;
+        }
+        .division-back {
+            background: var(--blanco-hueso);
+        }
+        .division .icon {
+            background: var(--dark);
+            color: var(--blanco-hueso);
+        }
+        .header-container nav {
+            background: rgba(0, 0, 0, 0.75);
+        }
+        h2~p {
+            color: var(--blanco-hueso);
+        }
+    } */
     /*----------------Animations------------------*/
     
     .opacity {

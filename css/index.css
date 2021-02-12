@@ -1131,10 +1131,10 @@
 /********************************/
 
 .contact {
-    padding-top: 30px;
-    margin-top: -20px;
+    padding-top: 60px;
     background: var(--blanco-hueso);
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    margin-bottom: -30px;
 }
 
 .contact-title {
@@ -2264,6 +2264,97 @@ label b {
 
 
 /********************************/
+
+
+/* 
+@media (prefers-color-scheme: dark) {
+     :root {
+        --dark: rgb(15, 15, 15);
+        --dark-light: rgb(35, 35, 35);
+    }
+    .banner-wave path {
+        fill: var(--dark) !important;
+    }
+    .swiper-container-sponsors img {
+        filter: grayscale(1) contrast(0.5) saturate(2);
+    }
+    .help-description p span {
+        background: var(--blanco-hueso);
+        color: var(--dark);
+        font-weight: 600;
+        padding: 7px 15px;
+    }
+    .help-container-card {
+        background: var(--dark-light);
+        color: var(--blanco-hueso);
+    }
+    .news,
+    .proyects {
+        background: var(--dark-light);
+        padding-bottom: 30px;
+    }
+    .proyect {
+        color: var(--blanco-hueso);
+    }
+    .proyect:first-child {
+        border-bottom: 1px solid rgb(88, 88, 88);
+        margin-top: 50px;
+    }
+    .proyect time {
+        background: var(--dark);
+    }
+    .news-telegram a {
+        background: var(--blanco-hueso);
+    }
+    .swiper-pagination-bullet {
+        background: var(--blanco-hueso) !important;
+        opacity: 0.2 !important;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+    }
+    .proyects-card-progress {
+        background: var(--dark);
+    }
+    .faq {
+        background: var(--dark-light);
+    }
+    .accordion-item,
+    .accordion-item-body {
+        color: var(--blanco-hueso);
+    }
+    .accordion-item {
+        border-bottom: 1px solid rgb(71, 71, 71);
+    }
+    .accordion-item-header {
+        font-size: 0.9em;
+    }
+    .accordion-item-body {
+        font-weight: 500;
+    }
+    .contact {
+        background: var(--dark);
+    }
+    #form label {
+        color: var(--blanco-hueso);
+    }
+    #form input,
+    #form textarea,
+    #form select,
+    #form option {
+        background: var(--dark-light) !important;
+        color: var(--blanco-hueso);
+    }
+    #form .input-error {
+        color: var(--naranja);
+    }
+    #form .input-submit input {
+        background: linear-gradient(45deg, var(--celeste-claro), var(--celeste-oscuro)) !important;
+    }
+    #btnSubmit~p {
+        color: var(--blanco-hueso);
+    }
+} */
 
 
 /********************************/
