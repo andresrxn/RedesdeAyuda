@@ -51,7 +51,8 @@
     <!-- <meta name="twitter:image" content="https://webslides.tv/static/images/share-netflix.jpg"> -->
 
 
-    <script>
+   
+ <script>
         document.addEventListener('DOMContentLoaded', () => {
             let videoBanner = document.getElementById('banner-video');
             videoBanner.play();
@@ -98,7 +99,6 @@
             document.getElementById("loader").classList.toggle("loaderHide");
         });
     </script>
-
     <script src="js/main.js "></script>
 
     <script src="js/styles.js "></script>
@@ -1082,63 +1082,7 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let videoBanner = document.getElementById('banner-video');
-            videoBanner.play();
-        });
-
-        function loop() {
-            videoBanner.currentTime = 0;
-            videoBanner.play();
-        }
-        let videoBanner = document.getElementById('banner-video');
-        videoBanner.addEventListener('ended', () => {
-            loop();
-
-        });
-        document.getElementById('blog').addEventListener('click', () => {
-            document.getElementById('nav').classList.remove('nav-active');
-            document.querySelector('.header-btn').classList.remove('open');
-        });
-
-        addEventListener('DOMContentLoaded', () => {
-            const counters = document.querySelectorAll('.contador-cantidad');
-            const vel = 200;
-
-            const counterAnimated = () => {
-                for (const counter of counters) {
-                    const counterUpdate = () => {
-                        let max = +counter.dataset.total,
-                            current = +counter.innerText,
-                            increasing = max / vel;
-
-                        if (current < max) {
-                            counter.innerText = Math.ceil(current + increasing);
-                            setTimeout(counterUpdate, 5);
-                        } else {
-                            counter.innerText = max;
-                        }
-                    }
-                    counterUpdate();
-                }
-            }
-            counterAnimated();
-        });
-        window.addEventListener("load", () => {
-            document.getElementById("loader").classList.toggle("loaderHide");
-        });
-    </script>
-
-    <script src="js/main.js "></script>
-
-    <script src="js/styles.js "></script>
-    <script src="js/wow.min.js "></script>
-
-    <script>
-        new WOW().init();
-    </script>
-
+  
 
     <!--Si ves esto... Dios te Bendiga :)-->
 </body>
