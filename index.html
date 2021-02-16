@@ -28,6 +28,7 @@
 
 
 
+    <link rel="preload" href="js/swiper-bundle.min.js" as="script">
 
     <!--Styles-->
     <link rel="stylesheet" href="css/index.css">
@@ -50,14 +51,7 @@
     <meta name="twitter:description" content="Somos una Fundación Evangélica guatemalteca creada para ayudar a Madres Solteras, Personas Desempleadas y a Personas con Enfermedades o Discapacidad...¡No Dejes Para Mañana la Ayuda que Puedes Dar Hoy!">
     <!-- <meta name="twitter:image" content="https://webslides.tv/static/images/share-netflix.jpg"> -->
 
-
-
-
-
-
-
-
-
+    <script src="js/swiper-bundle.min.js"></script>
     <script defer src="js/all.min.js "></script>
 
     <script type="application/ld+json">
@@ -365,7 +359,7 @@
             </div>
             <div class="help-container">
 
-                <div class="help-container-card wow opacity" style="opacity: 0;">
+                <div class="help-container-card ">
                     <div class="help-card-img">
                         <img src="img/madres.png" alt="Ilustración Madres Solteras" title="Créditos: https://undraw.co/illustrations">
                     </div>
@@ -393,7 +387,7 @@
                     </div>
                 </div>
 
-                <div class="help-container-card wow opacity" style="opacity: 0;">
+                <div class="help-container-card">
                     <div class="help-card-img">
                         <img src="img/desempleo.png" alt="Ilustración Personas Desempleadas" title="Créditos: https://undraw.co/illustrations">
                     </div>
@@ -421,7 +415,7 @@
                     </div>
                 </div>
 
-                <div class="help-container-card wow opacity" style="opacity: 0;">
+                <div class="help-container-card">
                     <div class="help-card-img">
                         <img src="img/invalidez.png" alt="Ilustración Personas con invalidez o Enfermedad" title="Créditos: https://undraw.co/illustrations">
                     </div>
@@ -1029,6 +1023,8 @@
 
     </footer>
 
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             let videoBanner = document.getElementById('banner-video');
@@ -1076,8 +1072,16 @@
             document.getElementById("loader").classList.toggle("loaderHide");
         });
     </script>
-    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js "></script>
+
     <script src="js/styles.js "></script>
+    <script src="js/wow.min.js "></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
 
     <!--Si ves esto... Dios te Bendiga :)-->
 </body>
