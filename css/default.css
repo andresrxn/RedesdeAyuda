@@ -420,7 +420,7 @@ h2~p {
     backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(0, 0, 0, 0.86);
     position: absolute;
-    top: 45px;
+    top: 44px;
     left: 0;
     width: 100%;
     height: calc(100vh - 35px);
@@ -439,6 +439,10 @@ h2~p {
 .header-menu {
     width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .header-menu-content {
@@ -447,7 +451,7 @@ h2~p {
     justify-content: center;
     align-items: center;
     height: auto;
-    margin: 39px 0;
+    margin: 22px 0;
     opacity: 0;
 }
 
@@ -917,8 +921,8 @@ footer svg {
         margin-top: -5%;
     }
     .header-menu-content {
-        font-size: 1.3em;
-        margin: 60px 0;
+        font-size: 1.2em;
+        margin: 20px 0;
     }
 }
 
@@ -1215,6 +1219,7 @@ footer svg {
         margin-top: 0px;
         display: flex;
         align-items: center;
+        flex-direction: row;
         height: 100%;
         overflow: visible;
     }
