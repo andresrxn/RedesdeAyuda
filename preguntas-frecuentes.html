@@ -8,39 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--favicon-->
+
     <link rel="icon" href="img/logos/redes-de-ayuda-b&w.png" type="image/x-icon" />
     <link rel="shortcut icon" href="img/logos/redes-de-ayuda-b&w.png" type="image/x-icon" />
-
     <!--About-->
     <title>FAQ | Fundación Redes de Ayuda </title>
     <meta name="author" content="Equipo Creativo de Redes de Ayuda">
-    <meta name="keywords" content="Fundacion, contacto, Guatemala, necesidad, financiamiento, trabajo">
-    <meta name="description" content="Si tienes alguna duda acerca de la fundación y relacionados, es probable que ya lo hayamos respondido antes, ¡Écha un vistazo!">
+
+    <meta name="description" content="¿Alguna duda sobre la Fundación? probablemente ya la hemos contestado, ¡averígualo aquí! ">
+
+
+    <link rel="preload" as="font" href="fonts/Montserrat-Bold.ttf" crossorigin>
+
+    <link rel="preload" as="font" href="fonts/Montserrat-SemiBold.ttf" crossorigin>
+
+    <link rel="preload" as="font" href="fonts/Montserrat-Medium.ttf" crossorigin>
+
+    <link rel="preload" as="font" href="fonts/Montserrat-ExtraBold.ttf" crossorigin>
+
+
+
+
+    <link rel="preload" href="js/all.min.js" as="script">
+    <link rel="preload" href="js/wow.min.js" as="script">
 
     <!--Styles-->
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/default.css">
 
+
     <!--Social-->
-    <meta property="og:url" content="https://fundacionrda.com">
+    <meta property="og:url" content="https://redesdeayuda.org">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Si tienes alguna duda acerca de la fundación y relacionados, es probable que ya lo hayamos respondido antes, ¡Écha un vistazo!">
-    <meta property="og:image" content="img/banner.jpg">
+    <meta property="og:title" content="FAQ | Fundación Redes de Ayuda" />
+    <meta property="og:description" content="¿Alguna duda sobre la Fundación? probablemente ya la hemos contestado, ¡averígualo aquí!">
+    <meta property="og:image" content="img/logos/redes-de-ayuda.png">
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@fundacionrda">
     <meta name="twitter:creator" content="@fundacionrda">
-    <meta name="twitter:title" content="Fundación Redes de Ayuda">
-    <meta name="twitter:description" content="Si tienes alguna duda acerca de la fundación y relacionados, es probable que ya lo hayamos respondido antes, ¡Écha un vistazo!">
-    <!-- <meta name="twitter:image" content="https://webslides.tv/static/images/share-netflix.jpg"> -->
+    <meta name="twitter:title" content="FAQ | Fundación Redes de Ayuda">
+    <meta name="twitter:description" content="¿Alguna duda sobre la Fundación? probablemente ya la hemos contestado, ¡averígualo aquí!">
+    <meta name="twitter:image" content="img/logos/redes-de-ayuda.png">
+
+    <script defer src="js/all.min.js "></script>
 
 
 
 </head>
 
 <body>
+
 
 
     <!--Constant Header-->
@@ -59,7 +79,7 @@
                 <div class="header-container-icons">
                     <div class="header-container-donate" id="header-donate">
                         <span>
-                            <a href="" title="Ház tu Aporte :D">
+                            <a href="donaciones.html">
                                 <i class="fas fa-gift icon"></i>
                                 Donar
                             </a>
@@ -77,154 +97,49 @@
                 <nav id="nav">
                     <ul class="header-menu">
                         <li class="header-menu-content">
-                            <a href="/">
+                            <a href="./">
                                 <i class="fas fa-home icon"></i> Inicio
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="index.html#news">
-                                            Últimas Noticias
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
                         <li class="header-menu-content">
                             <a href="nosotros.html">
                                 <i class="fas fa-users icon"></i> Nosotros
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="nosotros.html#historia">
-                                           Historia
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="nosotros.html#vision">
-                                            Visión y Misión
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="nosotros.html#rubros-de-ayuda">
-                                            Rubros de Ayuda
-                                        </a>
-                                    </li>
 
-                                </ul>
-                            </div>
                         </li>
                         <li class="header-menu-content">
                             <a href="proyectos.html">
                                 <i class="fas fa-calendar-check icon"></i> Proyectos
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="#historial">
-                                           Historial de Proyectos
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="#futuros-proyectos">
-                                            Proyectos a Futuro
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
                         <li class="header-menu-content">
                             <a href="donaciones.html">
                                 <i class="fas fa-hand-holding-heart icon"></i> Donativos
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="donaciones.html#metodos">
-                                          Métodos de Donación
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="donaciones.html#transparencia">
-                                           Transparencia de Donativos
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
-                        <li class="header-menu-content">
+
+                        <li class="header-menu-content" id="blog">
+                            <a href="index.html#news">
+                                <i class="fas fa-newspaper icon"></i> Blog
+                            </a>
+
+                        </li>
+                        <li class="header-menu-content" id="blog">
                             <a href="preguntas-frecuentes.html">
                                 <i class="fas fa-question icon"></i> FAQ
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#fundacion">
-                                         Sobre la Fundación
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#operaciones">
-                                          Sobre las Operaciones
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#donaciones">
-                                          Sobre Donaciones
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#iglesia">
-                                          Sobre Nuestra Iglesia
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
                         <li class="header-menu-content">
                             <a href="contacto.html">
                                 <i class="fas fa-comment icon"></i> Contacto
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="contacto.html#form">
-                                         Mensaje Directo
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="contacto.html#redes-sociales">
-                                            Redes Sociales
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="contacto.html#ubicacion">
-                                            Ubicación
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
-                        <li class="header-menu-content">
+                        <li class="header-menu-content" style="display: none;">
                             <span>
                                 ¡Síguenos!
                             </span>
@@ -251,292 +166,153 @@
     </header>
 
     <main>
-        <section class="banner-faq">
-            <h1 class="wow mostrarArriba" style="opacity: 0;">
-                <span>Preguntas</span> <span> Frecuentes</span>
-            </h1>
-        </section>
-
-        <div class="division wow mostrarArriba" data-wow-delay="0.3s" style="opacity: 0;">
-            <div class="division-back"></div>
-            <i class="fas fa-caret-down icon"></i>
-        </div>
-
-        <section class="faq" id="faq">
-
-            <div class="faq-container">
-
-                <div>
-
-                    <div class="accordion wow opacity" style="opacity: 0;" data-wow-delay="0.2s" id="fundacion">
-                        <h3>
-                            Sobre la Fundación
-                        </h3>
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital se recoge a domicilio) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
+        <section class="faq">
+            <div class="faq-title">
+                <h1>Preguntas Frecuentes</h1>
+                <span class="faq-span">Acerca de...</span>
+            </div>
+            <div class="categorias wow mostrarArriba" id="categorias" data-wow-delay="0">
+                <div class="categoria activa" data-categoria="metodos-pago">
 
 
+                    <p> <i class="fas fa-users icon"></i>
+                        <span>Nuestra</span>
+                        <span>Fundación</span>
+                    </p>
+
+                </div>
+                <div class="categoria" data-categoria="entregas">
+
+
+                    <p> <i class="fas fa-gift icon"></i>
+                        <span>Aportes</span>
+                        <span>Y Donativos</span>
+                    </p>
+
+                </div>
+                <div class="categoria" data-categoria="seguridad">
+
+
+                    <p> <i class="fas fa-briefcase icon"></i>
+                        <span>Operaciones</span>
+                        <span>Y Ejecución</span>
+                    </p>
+
+                </div>
+                <div class="categoria" data-categoria="cuenta">
+
+                    <p> <i class="far fa-calendar-check icon"></i>
+                        <span>Proyectos</span>
+                        <span>Propios</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="preguntas wow mostrarArriba" data-wow-delay="2s" style="opacity: 0;">
+
+                <!-- Preguntas Metodos de pago -->
+                <div class="contenedor-preguntas activo" data-categoria="metodos-pago">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            <a href=""> perferendis voluptatibus eligendi vel saepe harum. </a> Consectetur, doloribus.adipisicing elit.</p>
                     </div>
-                    <div class="accordion  wow opacity" style="opacity: 0;" data-wow-delay="0.2s" id="donaciones">
-                        <h3> Sobre los Donativos</h3>
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital se recoge a domicilio) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
                     </div>
                 </div>
-                <div>
-                    <div class="accordion  wow opacity" style="opacity: 0;" id="operaciones">
-                        <h3>
-                            Sobre las Operaciones
-                        </h3>
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital se recoge a domicilio) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-
+                <!-- Preguntas Entregas -->
+                <div class="contenedor-preguntas" data-categoria="entregas">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
                     </div>
-                    <div class="accordion  wow opacity" style="opacity: 0;" id="iglesia">
-                        <h3>
-                            Sobre Nuestra Iglesia
-                        </h3>
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital se recoge a domicilio) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                ¿Cómo puedo donar?
-                            </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    Puedes dar tus aportes en especie (dentro de la capital lo podemos ir a recoger a tu ubicación) o monetariamente a partir de Q1.00 por medio de depósitos bancarios, cheques o efectivo; para más detalles visita nuestros
-                                    <a href=""> métodos de donación. </a>
-                                </div>
-                            </div>
-                        </div>
-
-
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
                     </div>
                 </div>
+
+                <!-- Preguntas Seguridad -->
+                <div class="contenedor-preguntas " data-categoria="seguridad" id="fundacion">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+                    </div>
+                </div>
+
+                <!-- Preguntas Cuenta -->
+                <div class="contenedor-preguntas" data-categoria="cuenta">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que metodos de pago disponibles tienen? <i class="fas fa-plus icon" style="display: inline-block;"></i> </p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci,
+                            perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus icon" style="display: inline-block;"></i></p>
+                        <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                            doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+                    </div>
+                </div>
+
+
+
 
             </div>
         </section>
-        <section class="contact">
+        <section class="faq-contact">
             <p>
                 <span>
                     ¿Alguna otra pregunta?
@@ -546,7 +322,45 @@
                 </a>
             </p>
         </section>
+
+        <div class="contact-bubble" id="contact-bubble">
+            <div class="bubble-container">
+                <i class="fas fa-comment iconCom"></i>
+                <i class="fas fa-times iconTimes"></i>
+            </div>
+
+        </div>
+        <div class="bubble-social" id="bubble-social">
+
+            <div class="bubble" id="ph">
+                <a href="tel:+502-0000-0000" onClick="return(navigator.userAgent.match(/ Android | iPhone | mobile /i)) !=null;">
+                    <i class="fas fa-phone icon"></i></a>
+            </div>
+            <div class="bubble" id="ml">
+                <a href="#contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="bubble" id="fm">
+                <a href="https://m.me/f.RedesdeAyuda" target="_blank">
+                    <i class="fab fa-facebook-messenger icon"></i>
+                </a>
+            </div>
+            <div class="bubble" id="wp">
+                <a href="https://api.whatsapp.com/send?phone=50256977570">
+                    <i class="fab fa-whatsapp icon"></i>
+                </a>
+            </div>
+            <div class="bubble" id="tl">
+                <a href="https://m.me/f.RedesdeAyuda" target="_blank">
+                    <i class="fab fa-telegram-plane icon"></i>
+                </a>
+            </div>
+        </div>
+
     </main>
+
+
     <footer>
         <div class="footer-container">
             <div class="footer-waves">
@@ -613,6 +427,11 @@
                 <div class="footer-legal">
                     <ul>
                         <li>
+                            <a href="preguntas-frecuentes.html">
+                            Mapa de Sitio
+                        </a>
+                        </li>
+                        <li>
                             <a href="">
                             Términos y Condiciones
                         </a>
@@ -627,6 +446,7 @@
                             Prevención de Fraude
                         </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -644,76 +464,66 @@
     </footer>
 
 
-    <div class="float-contact">
-
-        <div class="float-bubbles" id="float-bubbles">
-
-            <div class="bubble" id="phone">
-
-
-                <a href="tel:+502-0000-0000" onClick="return(navigator.userAgent.match(/ Android | iPhone | mobile /i)) !=null;">
-                    <i class="fas fa-phone icon"></i></a>
-
-            </div>
-            <div class="bubble" id="mail">
-                <a href="#contact">
-                    <i class="fas fa-envelope icon"></i>
-                </a>
-
-            </div>
-            <div class="bubble" id="msn">
-                <a href="https://m.me/f.RedesdeAyuda" target="_blank">
-                    <i class="fab fa-facebook-messenger icon"></i>
-                </a>
-            </div>
-            <div class="bubble" id="wsp">
-                <a href="https://api.whatsapp.com/send?phone=50256977570">
-                    <i class="fab fa-whatsapp icon"></i>
-                </a>
-            </div>
-            <div class="bubble" id="tlg">
-                <a href="https://m.me/f.RedesdeAyuda" target="_blank">
-                    <i class="fab fa-telegram-plane icon"></i>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="float-container" id="float-container">
-            <div id="comment">
-                <i class="fas fa-comment "></i>
-            </div>
-            <div id="times">
-                <i class="fas fa-times "></i>
-            </div>
-
-        </div>
-    </div>
-
-    <!--Water Wave-->
-
-
-    <!--Footer-->
-
-
-    <!--Go top-->
-
-
-
 
 
 
 
     <script src="js/main.js "></script>
 
-    <script defer src="js/all.min.js "></script>
+    <script type="text/javascript">
+        const preguntas = document.querySelectorAll('.preguntas .contenedor-pregunta');
+        preguntas.forEach((pregunta) => {
+            pregunta.addEventListener('click', (e) => {
+                e.currentTarget.classList.toggle('activa');
 
-    <script src="js/wow.min.js "></script>
+                const respuesta = pregunta.querySelector('.respuesta');
+                const alturaRealRespuesta = respuesta.scrollHeight;
 
-    <script>
-        new WOW().init();
+                if (!respuesta.style.maxHeight) {
+                    // Si esta vacio el maxHeight entonces ponemos un valor.
+                    respuesta.style.maxHeight = alturaRealRespuesta + 'px';
+                } else {
+                    respuesta.style.maxHeight = null;
+                }
+
+                // [Opcional] Reiniciamos las demas preguntas
+                preguntas.forEach((elemento) => {
+                    // Solamente queremos ejecutar el codigo para las preguntas que no 
+                    // sean la pregunta a la que le dimos click.
+                    if (pregunta !== elemento) {
+                        elemento.classList.remove('activa');
+                        elemento.querySelector('.respuesta').style.maxHeight = null;
+                    }
+                });
+
+
+            });
+        });
+        const categorias = document.querySelectorAll('#categorias .categoria');
+        const contenedorPreguntas = document.querySelectorAll('.contenedor-preguntas');
+        let categoriaActiva = null;
+
+        categorias.forEach((categoria) => {
+            categoria.addEventListener('click', (e) => {
+                categorias.forEach((elemento) => {
+                    elemento.classList.remove('activa');
+                });
+
+                e.currentTarget.classList.toggle('activa');
+                categoriaActiva = categoria.dataset.categoria;
+
+
+                // Activamos el contenedor de preguntas que corresponde
+                contenedorPreguntas.forEach((contenedor) => {
+                    if (contenedor.dataset.categoria === categoriaActiva) {
+                        contenedor.classList.add('activo');
+                    } else {
+                        contenedor.classList.remove('activo');
+                    }
+                });
+            });
+        });
     </script>
-
 
     <!--Si ves esto... Dios te Bendiga :)-->
 </body>

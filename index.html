@@ -26,10 +26,10 @@
 
     <link rel="preload" as="font" href="fonts/Montserrat-ExtraBold.ttf" crossorigin>
 
-    <link rel="preload" as="video" href="img/video/video_3.mp4">
-    <link rel="preload" href="css/index.css" as="styles">
-    <link rel="preload" href="css/swiper-bundle.min.css" as="styles">
-    <link rel="preload" href="css/default.css" as="styles">
+
+    <link rel="preload" href="css/index.css" as="style">
+    <link rel="preload" href="css/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="css/default.css" as="style">
     <link rel="preload" href="js/swiper-bundle.min.js" as="script">
     <link rel="preload" href="js/all.min.js" as="script">
     <link rel="preload" href="js/wow.min.js" as="script">
@@ -87,7 +87,16 @@
 </head>
 
 <body>
-
+    <div class="loader" id="loader">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadows"></div>
+            <div class="shadows"></div>
+            <div class="shadows"></div>
+        </div>
+    </div>
 
 
     <!--Constant Header-->
@@ -129,151 +138,46 @@
                             <a href="./">
                                 <i class="fas fa-home icon"></i> Inicio
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="#news">
-                                            Últimas Noticias
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
                         <li class="header-menu-content">
                             <a href="nosotros.html">
                                 <i class="fas fa-users icon"></i> Nosotros
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="nosotros.html#historia">
-                                           Historia
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="nosotros.html#vision">
-                                            Visión y Misión
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="nosotros.html#rubros-de-ayuda">
-                                            Rubros de Ayuda
-                                        </a>
-                                    </li>
 
-                                </ul>
-                            </div>
                         </li>
                         <li class="header-menu-content">
                             <a href="proyectos.html">
                                 <i class="fas fa-calendar-check icon"></i> Proyectos
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="proyectos.html#historial">
-                                           Historial de Proyectos
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="proyectos.html#futuros-proyectos">
-                                            Proyectos a Futuro
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
                         <li class="header-menu-content">
                             <a href="donaciones.html">
                                 <i class="fas fa-hand-holding-heart icon"></i> Donativos
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="donaciones.html#metodos">
-                                          Métodos de Donación
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="donaciones.html#transparencia">
-                                           Transparencia de Donativos
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
-                        <li class="header-menu-content">
+
+                        <li class="header-menu-content" id="blog">
+                            <a href="#news">
+                                <i class="fas fa-newspaper icon"></i> Blog
+                            </a>
+
+                        </li>
+                        <li class="header-menu-content" id="blog">
                             <a href="preguntas-frecuentes.html">
                                 <i class="fas fa-question icon"></i> FAQ
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#fundacion">
-                                         Sobre la Fundación
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#operaciones">
-                                          Sobre las Operaciones
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#donaciones">
-                                          Sobre Donaciones
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="preguntas-frecuentes.html#iglesia">
-                                          Sobre Nuestra Iglesia
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
                         <li class="header-menu-content">
                             <a href="contacto.html">
                                 <i class="fas fa-comment icon"></i> Contacto
                             </a>
-                            <div class="header-menu-icon">
-                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
-                            </div>
-                            <div class="header-menu-down">
-                                <ul class="header-menu-down-content">
-                                    <li class="header-menu-down-li">
-                                        <a href="contacto.html#form">
-                                         Mensaje Directo
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="contacto.html#redes-sociales">
-                                            Redes Sociales
-                                        </a>
-                                    </li>
-                                    <li class="header-menu-down-li">
-                                        <a href="contacto.html#ubicacion">
-                                            Ubicación
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </li>
-                        <li class="header-menu-content">
+                        <li class="header-menu-content" style="display: none;">
                             <span>
                                 ¡Síguenos!
                             </span>
@@ -546,95 +450,7 @@
         </section>
 
 
-        <section class="news" id="news">
 
-            <div class="news-container">
-                <h2>
-                    Últimas Noticias
-                </h2>
-                <p>
-                    ¡No te pierdas de las novedades de la Fundación!
-
-                </p>
-                <div class="news-telegram">
-                    <a href="https://t.me/">
-                        Recibir por Telegram <i class="fab fa-telegram-plane icon"></i>
-                    </a>
-                </div>
-                <div class="swiper-container-news">
-                    <div class="swiper-wrapper">
-                        <article class="swiper-slide">
-
-                            <div class="news-title">
-                                <a href="noticias/noticia-1.html">
-                                    <h3>
-                                        <span>Día de Duelo</span>
-                                        <span>28-01-2021</span>
-                                    </h3>
-                                    <p>
-                                        Fallecimiento de la madre de un miembro de nuestra iglesia La Presencia del Señor Jesús
-                                        <i class="fas fa-chevron-right icon"></i>
-                                    </p>
-                                </a>
-                            </div>
-
-                        </article>
-
-                        <article class="swiper-slide">
-
-                            <div class="news-title">
-                                <a href="noticias/noticia-2.html">
-                                    <h3>
-                                        <span>Noticia 1</span>
-                                        <span>28-01-2021</span>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus!
-                                        <i class="fas fa-chevron-right icon"></i>
-                                    </p>
-                                </a>
-                            </div>
-                        </article>
-
-                        <article class="swiper-slide">
-
-                            <div class="news-title">
-                                <a href="noticias/noticia-3.html">
-                                    <h3>
-                                        <span>Noticia 1</span>
-                                        <span>28-01-2021</span>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus!
-                                        <i class="fas fa-chevron-right icon"></i>
-                                    </p>
-                                </a>
-                            </div>
-                        </article>
-
-                        <article class="swiper-slide">
-
-                            <div class="news-title">
-                                <a href="noticias/noticia-4.html">
-                                    <h3>
-                                        <span>Noticia 1</span>
-                                        <span>28-01-2021</span>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus!
-                                        <i class="fas fa-chevron-right icon"></i>
-                                    </p>
-                                </a>
-                            </div>
-                        </article>
-
-                    </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </section>
 
         <section class="proyects" id="proyects">
             <div class="proyects-container">
@@ -642,7 +458,7 @@
                     Proyectos
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, saepe nostrum est eaque enim quaerat
+                    Gracias a la ayuda de Dios y de cada donante logramos ayudar cada vez más guatemaltecos y llevar esperanza a sus vidas.
                 </p>
                 <div class="proyect-container">
 
@@ -760,28 +576,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="about-share-container">
-                        <div>
-                            <div class="about-share-ws">
-                                <a href="https://api.whatsapp.com/send?text=https://www.redesdeayuda.com"><i class="fab fa-whatsapp icon"></i>Mensaje</a>
-                            </div>
-                            <div class="about-share-ig">
-                                <a href="https://instagram.com/redesdeayuda"><i class="fab fa-instagram icon"></i>Seguirnos</a>
-                            </div>
 
-                        </div>
-                        <div>
-                            <div class="about-share-tw">
-                                <a href="https://twitter.com/intent/tweet?text= escola%20inform%C3%A1tica%20i%20disseny&url=https://espai.es&hashtags=dissenyweb"><i class="fab fa-twitter icon"></i>  tweet</a>
-                            </div>
-                            <div class="fb-share-button" data-href="https://redesdeayudafundacion.org" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fredesdeayudafundacion.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Publicación</a></div>
-                        </div>
-
-                    </div>
-                    <div class="about-share-fb">
-                        <div class="fb-like" data-href="https://www.facebook.com/f.RedesdeAyuda/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
-
-                    </div> -->
                 </div>
                 <div class="about-us-since">
                     <i class="fas fa-dove icon"></i>
@@ -791,18 +586,32 @@
                         2020
                     </span>
                 </div>
-                <!-- <div class="about-us-ods">
-                    <span id="counter" class="animated" data-count="700">
+                <div class="ods">
+                    <div class="about-us-ods">
+                        <span class="contador-cantidad wow opacity" style="opacity: 0;" data-total="700">
                         0
                     </span>
-                    <img src="img/gt.gif" alt="">
-                    <span>
+
+                        <span>
                         Guatemaltecos/as
                     </span>
-                    <span>
+                        <span>
                         Beneficiados
                     </span>
-                </div> -->
+                    </div>
+                    <div class="about-us-ods ods-two">
+                        <span class="contador-cantidad wow opacity" style="opacity: 0;" data-total="100">
+                        0
+                    </span>
+
+                        <span>
+                        Sueños
+                    </span>
+                        <span>
+                        Cumplidos
+                    </span>
+                    </div>
+                </div>
                 <div class="about-personal-proyects">
                     <div class="about-us-musik  ">
                         <div class="about-musik-logo">
@@ -919,6 +728,89 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
+
+        <section class="news" id="news">
+
+            <div class="news-container">
+                <h2>
+                    Últimas Noticias
+                </h2>
+                <p>
+                    ¡No te pierdas de las novedades de la Fundación!
+
+                </p>
+                <div class="news-telegram">
+                    <a href="https://t.me/">
+                        Recibir por Telegram <i class="fab fa-telegram-plane icon"></i>
+                    </a>
+                </div>
+                <div class="swiper-container-news">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+
+                            <div class="news-title">
+                                <a href="noticias/noticia-1.html">
+                                    <h3>
+                                        Día de Duelo
+                                    </h3>
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="swiper-slide">
+
+                            <div class="news-title">
+                                <a href="noticias/noticia-2.html">
+                                    <h3>
+                                        noticia-1
+                                    </h3>
+                                    <div class="news-date">
+
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide">
+
+                            <div class="news-title">
+                                <a href="noticias/noticia-3.html">
+                                    <h3>
+                                        <span>Noticia 1</span>
+                                        <span>28-01-2021</span>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus!
+                                        <i class="fas fa-chevron-right icon"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide">
+
+                            <div class="news-title">
+                                <a href="noticias/noticia-4.html">
+                                    <h3>
+                                        <span>Noticia 1</span>
+                                        <span>28-01-2021</span>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus!
+                                        <i class="fas fa-chevron-right icon"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
 
@@ -1099,6 +991,11 @@
                 <div class="footer-legal">
                     <ul>
                         <li>
+                            <a href="preguntas-frecuentes.html">
+                            Mapa de Sitio
+                        </a>
+                        </li>
+                        <li>
                             <a href="">
                             Términos y Condiciones
                         </a>
@@ -1113,6 +1010,7 @@
                             Prevención de Fraude
                         </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -1145,6 +1043,37 @@
         videoBanner.addEventListener('ended', () => {
             loop();
 
+        });
+        document.getElementById('blog').addEventListener('click', () => {
+            document.getElementById('nav').classList.remove('nav-active');
+            document.querySelector('.header-btn').classList.remove('open');
+        });
+
+        addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.contador-cantidad');
+            const vel = 200;
+
+            const counterAnimated = () => {
+                for (const counter of counters) {
+                    const counterUpdate = () => {
+                        let max = +counter.dataset.total,
+                            current = +counter.innerText,
+                            increasing = max / vel;
+
+                        if (current < max) {
+                            counter.innerText = Math.ceil(current + increasing);
+                            setTimeout(counterUpdate, 5);
+                        } else {
+                            counter.innerText = max;
+                        }
+                    }
+                    counterUpdate();
+                }
+            }
+            counterAnimated();
+        });
+        window.addEventListener("load", () => {
+            document.getElementById("loader").classList.toggle("loaderHide");
         });
     </script>
 
