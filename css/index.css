@@ -64,32 +64,24 @@
 .banner-container-content h1 span:first-child {
     font-size: 0.45em;
     font-weight: 600;
-    opacity: 0;
-    animation: ShowUp 1s 0.3s forwards;
 }
 
 .banner-container-content h1 span:nth-child(2) {
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 800;
-    opacity: 0;
-    animation: ShowUp 1s 0.6s forwards;
 }
 
 .banner-container-content h1 span:nth-child(3) {
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 800;
-    opacity: 0;
-    animation: ShowUp 1s 0.6s forwards;
 }
 
 .banner-container-content h1 span:nth-child(4) {
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 800;
-    opacity: 0;
-    animation: ShowUp 1s 0.6s forwards;
 }
 
 .banner-container-content h1 span:last-child {
@@ -100,8 +92,6 @@
     background: rgba(27, 27, 27, 0.658);
     border-radius: 10px;
     padding: 5px 10px;
-    opacity: 0;
-    animation: ShowUp 1s 0.9s forwards;
 }
 
 .banner-container-button {
@@ -122,8 +112,6 @@
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.575);
     transition: 0.2s ease;
     font-size: 1.1em;
-    opacity: 0;
-    animation: opacity 1s 1.1s forwards;
 }
 
 .banner-container-button a:active {
@@ -186,8 +174,12 @@
 
 /********************************/
 
+.help {
+    padding-bottom: 60px;
+}
+
 .help-container {
-    margin: 20px 0;
+    margin-top: 40px;
 }
 
 .help-description p {
@@ -305,11 +297,9 @@
 /********************************/
 
 .news {
-    padding-top: 40px;
-    margin-top: 50px;
+    padding: 60px 0;
     z-index: 100;
     position: relative;
-    background: #fff;
 }
 
 .news-telegram {
@@ -425,7 +415,7 @@
 
 .proyects {
     padding-top: 35px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-top: -2px;
     background: #fff;
     position: relative;
@@ -610,7 +600,7 @@
     align-items: center;
     color: var(--grisoscuro);
     max-width: 400px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
     position: relative;
     overflow: hidden;
 }
@@ -622,9 +612,10 @@
     position: relative !important;
     height: 480px;
     width: 100%;
-    background: url(../img/guatemala-1971375_1920.jpg);
+    background: url(../img/union.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 70%;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
 }
 
 .about-us img {
@@ -633,6 +624,8 @@
 }
 
 .about-us-content {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.788);
     position: absolute;
     top: 0;
     left: 0;
@@ -640,7 +633,7 @@
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.2); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,18 +644,14 @@
 .about-icon {
     margin-top: -190px;
     font-size: 3em;
-    color: var(--blanco-hueso);
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.9));
     margin-bottom: -7px;
 }
 
 .about-us-content p {
-    color: var(--blanco-hueso);
     text-transform: uppercase;
     font-size: 2.3em;
     line-height: 1;
     font-weight: 800;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.945);
 }
 
 .about-us-content p span:first-child {
@@ -696,7 +685,6 @@
     padding-top: 6px;
     letter-spacing: 0.5px;
     font-weight: 700;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.842);
 }
 
 .about-us-content .more,
@@ -733,9 +721,9 @@
     border-radius: 10px;
     max-width: 400px;
     margin: 15px auto;
-    background: linear-gradient(to bottom, #fff, rgb(172, 172, 172));
-    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
+    background: #fff;
     font-size: 1.2em;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
 }
 
 .about-us-since .icon {
@@ -749,21 +737,27 @@
     text-transform: uppercase;
 }
 
+.ods {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
 .about-us-ods {
     border-radius: 10px;
-    background: rgb(255, 255, 255);
+    background: #fff;
     height: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.8em;
     max-width: 400px;
     margin: 15px auto;
     box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
 }
 
-#counter::before {
+.about-us-ods span:first-child::before {
     content: "+";
     font-size: 0.8em;
 }
@@ -773,63 +767,6 @@
     color: var(--naranja-oscuro);
     font-size: 2.3em;
     opacity: 0;
-}
-
-.about-us-ods img {
-    height: 7px;
-    width: 80%;
-    object-fit: cover;
-    margin: 8px auto;
-    /* border: 1px solid #0066ffab; */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.63);
-}
-
-.about-us-ods span:nth-child(3),
-.about-us-ods span:nth-child(4) {
-    font-weight: 700;
-    font-size: 0.7em;
-}
-
-.about-us-ods-two {
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2em;
-    max-width: 400px;
-    margin: 15px auto;
-    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
-}
-
-.about-us-ods-two span:first-child {
-    font-weight: 800;
-    color: var(--naranja-oscuro);
-    font-size: 2.3em;
-    opacity: 0;
-}
-
-.about-us-ods-two span:first-child::before {
-    content: "+";
-    font-size: 0.8em;
-    margin-right: -20px;
-}
-
-.about-us-ods-two img {
-    height: 7px;
-    width: 80%;
-    object-fit: cover;
-    margin: 8px auto;
-    /* border: 1px solid #0066ffab; */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.63);
-}
-
-.about-us-ods-two span:nth-child(3),
-.about-us-ods-two span:nth-child(4) {
-    font-weight: 700;
-    font-size: 0.7em;
 }
 
 .about-us-musik {
@@ -1089,8 +1026,8 @@
 /********************************/
 
 .contact {
-    padding-top: 60px;
-    background: var(--blanco-hueso);
+    padding-top: 80px;
+    background: #fff;
     padding-bottom: 80px;
     margin-bottom: -30px;
 }
@@ -1100,157 +1037,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#form {
-    width: 95%;
-    margin: auto;
-    max-width: 450px;
-    margin-top: -20px;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#form p {
-    text-align: left;
-}
-
-#form .contact-img {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible !important;
-    padding: 25px;
-    margin-bottom: 20px;
-}
-
-#form img {
-    object-fit: cover;
-    max-width: 300px;
-    margin-left: -5px;
-}
-
-#form input,
-#form textarea {
-    width: 100%;
-    background: #ffffff;
-    border: none;
-    outline: none;
-    resize: none;
-    transition: 0.3s ease;
-    font-weight: 500;
-    border-radius: 5px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.089);
-    border-bottom: 2px solid rgb(206, 206, 206);
-}
-
-#form input:focus,
-#form textarea:focus {
-    border-bottom: 2px solid var(--celeste-claro);
-}
-
-#form input {
-    height: 35px;
-    padding: 7px 10px;
-    margin-top: 10px;
-    position: relative;
-}
-
-#form textarea {
-    padding: 10px;
-    margin-top: 10px;
-    padding-right: 30px;
-}
-
-.input-phone {
-    width: 80% !important;
-}
-
-.input-phone input {
-    background: #fff !important;
-}
-
-#sub {
-    position: relative;
-    display: block;
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background: #fff;
-    margin-top: 10px;
-    outline: none;
-    margin-bottom: 30px !important;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: 2px solid var(--celeste-claro);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.089);
-    cursor: pointer;
-}
-
-#sub option {
-    font-weight: 600;
-    font-size: 0.9em;
-    outline: none;
-    background: #fff;
-    border: 0;
-    cursor: pointer;
-}
-
-.input-box {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.input-box label {
-    font-weight: 600;
-    font-size: 0.9em;
-    position: relative;
-}
-
-label b {
-    font-weight: 500;
-    font-size: 0.8em;
-}
-
-#form #btnSubmit {
-    background: linear-gradient(40deg, var(--celeste-claro), var(--celeste-oscuro));
-    height: 40px;
-    width: auto;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 700;
-    transition: ease;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.089);
-    border: 0;
-    padding: 10px 35px;
-    transition: 0.1s ease;
-}
-
-.input-submit .input-error {
-    font-size: 0.9em !important;
-    margin-top: 15px;
-    text-align: center !important;
-}
-
-#btnSubmit:active {
-    transform: scale(0.95);
-}
-
-#btnSubmit~p {
-    font-size: 0.55em;
-}
-
-#btnSubmit~p a {
-    color: var(--celeste-claro);
-}
-
-.input-error {
-    font-size: 0.9em;
-    color: rgb(243, 18, 18);
-    display: none;
 }
 
 
@@ -1342,6 +1128,9 @@ label b {
     }
     .banner-container-content {
         top: 100px;
+    }
+    .about-us-ods {
+        font-size: 2em;
     }
 }
 
@@ -1577,7 +1366,7 @@ label b {
         padding-right: 30px;
     }
     .about-us {
-        max-width: 95%;
+        max-width: 100%;
     }
     .about-us-video {
         height: 300px;
@@ -1629,7 +1418,7 @@ label b {
     .about-us-since {
         font-size: 1em;
         padding: 20px 0;
-        max-width: 95%;
+        max-width: 100%;
     }
     .about-us-since .icon {
         font-size: 1em;
@@ -1642,18 +1431,33 @@ label b {
         font-size: 1em;
         text-transform: uppercase;
     }
+    .ods {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        margin: auto;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    .ods>div {
+        max-width: 49%;
+        width: 49%;
+        margin: 0;
+        font-size: 1.85em;
+    }
     .about-personal-proyects {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         max-width: 1300px !important;
         margin: auto;
     }
     .about-personal-proyects>div {
-        width: 47% !important;
+        width: 49% !important;
         max-width: 49% !important;
         height: 540px;
-        margin: auto;
+        margin: 0;
     }
     .about-church-img {
         height: 360px;
@@ -1672,7 +1476,6 @@ label b {
     #form img {
         max-width: 400px;
     }
-    #form .form-container {}
     .form-submit .form-error {
         margin-left: 0;
     }
@@ -1744,9 +1547,12 @@ label b {
     .contact {
         padding: 40px 0;
     }
+    .help-container {
+        margin-top: 70px;
+        max-width: 1900px;
+    }
     .help-container-card {
         max-width: 420px;
-        margin-top: 70px;
     }
     .news,
     .proyects {
@@ -1858,14 +1664,8 @@ label b {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .about-us {
-        max-width: 95%;
-    }
     .about-us-video {
         height: 390px;
-    }
-    .about-us-content {
-        background: rgba(0, 0, 0, 0.431);
     }
     .about-icon {
         margin-top: -50px;
@@ -1909,7 +1709,6 @@ label b {
     .about-us-since {
         font-size: 1em;
         padding: 20px 0;
-        max-width: 95%;
     }
     .about-us-since .icon {
         font-size: 1em;
@@ -1921,6 +1720,10 @@ label b {
         font-weight: 800;
         font-size: 1em;
         text-transform: uppercase;
+    }
+    .ods>div {
+        height: 300px;
+        font-size: 2.5em;
     }
     .about-us-church p {
         font-size: 1em;
@@ -1960,6 +1763,9 @@ label b {
     #form .form-container {
         width: 50%;
     }
+    .input-submit input {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width:1250px) {
@@ -1991,15 +1797,20 @@ label b {
     .banner-container-content {
         top: 150px;
     }
+    .help {
+        padding-bottom: 80px;
+    }
     .help-container {
-        margin-top: 40px;
-        max-width: 1400px;
         margin: auto;
+        margin-top: 70px;
     }
     .help-container-card {
         max-width: 400px;
-        height: 327px;
-        margin-top: 70px;
+        height: 350px;
+        margin-top: 55px;
+    }
+    .help-container-card .more {
+        margin-top: 20px;
     }
     .help-container-card:nth-child(1) {
         margin-bottom: 0px;
@@ -2011,21 +1822,11 @@ label b {
         max-width: 1450px;
         margin: auto;
     }
-    .about-personal-proyects {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .about-personal-proyects>div {
-        max-width: 47% !important;
         height: 600px !important;
-        margin: auto;
     }
     .about-personal-proyects>div {
-        width: 47% !important;
-        max-width: 49% !important;
         height: 540px;
-        margin: auto;
     }
     .about-us-church::after {
         content: "";
@@ -2040,6 +1841,9 @@ label b {
     .about-church-img {
         height: 420px;
     }
+    .about-us-video {
+        background-position: 70% 70%;
+    }
     .about-us-content p {
         color: var(--blanco-hueso);
         text-transform: uppercase;
@@ -2051,12 +1855,9 @@ label b {
     .about-us-since {
         font-size: 1.5em;
         padding: 30px 0;
-        max-width: 95%;
     }
-    .about-us-since .icon {
-        font-size: 1em;
-        display: inline-block;
-        margin-right: 5px;
+    .ods>div {
+        font-size: 2.75em;
     }
     .about-us-musik p {
         padding-left: 40px;
@@ -2088,39 +1889,46 @@ label b {
         font-size: 1.8em !important;
     }
     .banner-container-video video {
-        height: 700px;
+        height: 900px;
     }
     .banner-container-video {
         margin-top: -0px;
     }
     .banner-container-video::after {
-        height: 700px;
+        height: 900px;
         background: rgba(0, 0, 0, 0.40);
     }
     .banner-container-content h1 span:first-child {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     .banner-container-content h1 span:nth-child(2) {
-        font-size: 2.8em;
+        font-size: 3.6em;
         display: inline-block;
     }
     .banner-container-content h1 span:nth-child(3) {
-        font-size: 2.8em;
+        font-size: 3.6em;
         display: inline-block;
     }
     .banner-container-content h1 span:nth-child(4) {
-        font-size: 2.8em;
+        font-size: 3.6em;
         margin-top: -5px;
     }
     .banner-container-content h1 span:last-child {
-        font-size: 0.9em;
+        font-size: 1.3em;
     }
     .banner-container-button a {
-        font-size: 1.9em;
-        padding: 20px 30px;
+        font-size: 2.8em;
+        padding: 25px 50px;
+        border-radius: 20px;
     }
     .banner-container-content {
         top: 150px;
+    }
+    .banner-waves {
+        top: -70px;
+    }
+    .banner-waves div {
+        height: 80px !important;
     }
     .help-container {
         margin-top: 40px;
@@ -2131,7 +1939,7 @@ label b {
         padding: 15px 20px;
     }
     .help-container-card {
-        max-width: 500px;
+        max-width: 530px;
         height: 417px;
         margin-top: 70px;
     }
@@ -2160,10 +1968,13 @@ label b {
     .help-container-card:nth-child(2) {
         margin-bottom: 0px;
     }
+    .swiper-container-news {
+        margin-top: 80px;
+    }
     .swiper-container-news .swiper-slide {
-        width: 87%;
-        height: 500px;
-        max-width: 505px;
+        width: 700px;
+        max-width: 100%;
+        height: 700px;
     }
     .about-personal-proyects>div {
         max-width: 47% !important;
