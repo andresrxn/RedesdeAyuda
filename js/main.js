@@ -1,6 +1,3 @@
-// Initial loader
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
@@ -45,42 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // });
 
 
-// let comment = document.getElementById('comment');
-// comment.addEventListener('click', () => {
-
-
-//     let times = document.getElementById('times');
-//     times.style.display = "block";
-//     comment.style.display = "none";
-//     let bubbles = document.getElementById('float-bubbles');
-//     bubbles.classList.add("bubble-active");
-
-
-
-// });
-
-// let times = document.getElementById('times');
-// times.addEventListener('click', () => {
-//     let comment = document.getElementById('comment');
-//     comment.style.display = "block";
-//     times.style.display = "none";
-//     let bubbles = document.getElementById('float-bubbles');
-//     bubbles.classList.remove("bubble-active");
-
-// });
-
-
-// let bubbles = document.getElementById('mail');
-// bubbles.addEventListener('click', () => {
-
-//     let bubbles = document.getElementById('float-bubbles');
-//     bubbles.classList.remove("bubble-active");
-//     let times = document.getElementById('times');
-//     times.style.display = "none";
-//     let comment = document.getElementById('comment');
-//     comment.style.display = "block";
-// });
-
 const cBubble = document.getElementById('contact-bubble');
 
 cBubble.addEventListener('click', () => {
@@ -99,72 +60,47 @@ cBubble.addEventListener('click', () => {
 //burger menu button animation
 const menuBtn = document.querySelector('.header-btn');
 let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-    if (!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
+const navLinks = document.querySelectorAll(".header-menu .header-menu-content");
 
-        let nav = document.getElementById('nav');
-        nav.classList.add("nav-active");
-
-        //
-        let comment = document.getElementById('comment');
-        comment.style.display = "block";
-        let times = document.getElementById('times');
-        times.style.display = "none";
-        let bubbles = document.getElementById('float-bubbles');
-        bubbles.classList.remove("bubble-active");
+function menu() {
 
 
-    } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-        nav.classList.remove("nav-active");
-        const currentHeaderMenuDown = document.querySelector(".header-menu-icon.icon-down-active")
+    menuBtn.addEventListener('click', () => {
+        if (!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
 
-        currentHeaderMenuDown.classList.toggle("icon-down-active");
-        currentHeaderMenuDown.nextElementSibling.style.maxHeight = 0;
-    }
+            let nav = document.getElementById('nav');
+            nav.classList.add("nav-active");
 
-});
+            //
 
 
-function menuOptions() {
-    const headerMenuIcons = document.querySelectorAll(".header-menu-icon");
-    headerMenuIcons.forEach(headerMenuIcon => {
-        headerMenuIcon.addEventListener('click', (e) => {
-            const currentHeaderMenuDown = document.querySelector(".header-menu-icon.icon-down-active")
-            if (currentHeaderMenuDown && currentHeaderMenuDown !== headerMenuIcon) {
-                currentHeaderMenuDown.classList.toggle("icon-down-active");
-                currentHeaderMenuDown.nextElementSibling.style.maxHeight = 0;
-            }
 
-            headerMenuIcon.classList.toggle("icon-down-active");
-            const headerMenuDown = headerMenuIcon.nextElementSibling;
-
-            if (headerMenuIcon.classList.contains("icon-down-active")) {
-                headerMenuDown.style.maxHeight = headerMenuDown.scrollHeight + "px";
-            } else {
-                headerMenuDown.style.maxHeight = 0;
-            }
-        });
-    });
-
-    const headerMenuDownLis = document.querySelectorAll(".header-menu-down-li");
-    headerMenuDownLis.forEach(headerMenuDownLi => {
-        headerMenuDownLi.addEventListener('click', () => {
-            const currentHeaderMenuDown = document.querySelector(".header-menu-icon.icon-down-active")
-
-            currentHeaderMenuDown.classList.toggle("icon-down-active");
-            currentHeaderMenuDown.nextElementSibling.style.maxHeight = 0;
-
+        } else {
             menuBtn.classList.remove('open');
             menuOpen = false;
             nav.classList.remove("nav-active");
+
+        }
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `ShowUp2 0.3s ease-out forwards ${index / 13 }s`;
+            }
         });
+
     });
+
+
 }
-menuOptions();
+menu();
+
+
+
+
+
 
 
 
@@ -240,14 +176,11 @@ const validarCampo = (expresion, input, campo) => {
     if (expresion.test(input.value)) {
 
 
-        // document.querySelector(`#input-${campo} i`).classList.add('fa-check-circle');
-        // document.querySelector(`#input-${campo} i`).classList.remove('fa-times-circle');
         document.querySelector(`.input-${campo} .input-error`).style.display = "none"
         campos[campo] = true;
     } else {
 
-        // document.querySelector(`#input-${campo} i`).classList.add('fa-times-circle');
-        // document.querySelector(`#input-${campo} i`).classList.remove('fa-check-circle');
+
         document.querySelector(`.input-${campo} .input-error`).style.display = "block"
         campos[campo] = false;
     }
@@ -260,14 +193,12 @@ const validarText = (expresion, msg, campo) => {
     if (expresion.test(msg.value)) {
 
 
-        // document.querySelector(`#input-${campo} i`).classList.add('fa-check-circle');
-        // document.querySelector(`#input-${campo} i`).classList.remove('fa-times-circle');
+
         document.querySelector(`.input-msg .input-error`).style.display = "none"
         campos[campo] = true;
     } else {
 
-        // document.querySelector(`#input-${campo} i`).classList.add('fa-times-circle');
-        // document.querySelector(`#input-${campo} i`).classList.remove('fa-check-circle');
+
         document.querySelector(`.input-msg .input-error`).style.display = "block"
         campos[campo] = false;
     }
